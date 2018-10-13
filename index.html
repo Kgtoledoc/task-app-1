@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>Create a new task</h1>
+  </div>
+  <form action="/tasks/new" method="POST">
+    <input type="text" name="description" placeholder="Write your task">
+    <input type="submit">
+  </form>
+  <div>
+      <h1>Our tasks</h1>
+      <ul id="task-area">
+      </ul>
+  </div>
+
+  <div>
+    <h1>Updating area</h1>
+    <div id="update-area"></div>
+  </div>
+
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
