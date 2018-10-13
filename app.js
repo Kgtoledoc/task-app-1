@@ -7,11 +7,11 @@ const MongoClient = mongo.MongoClient;
 const ObjectId = require('mongodb').ObjectId;
 
 
-const url = "mongodb://localhost:27017";
+const url = "mongodb://localhost:27017" || "mongodb://ds121311.mlab.com:21311";
 
 const port = process.env.PORT || 3000;
 
-const dbName = 'amazingtododb';
+const dbName = 'task-app';
 
 app.use("/", express.static(__dirname + '/'));
 app.use(bodyParser.urlencoded({ extended: true}));
